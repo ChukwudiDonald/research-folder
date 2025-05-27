@@ -21,8 +21,8 @@ By leveraging **deep-learning sequence models**, we automate reconstruction of t
 
 ## The Core Idea
 
-Instead of encrypting ASCII codes directly, we first apply a **non-linear mapping** from letters to integers. After converting from characters to numeric codes, we feed the data into conventional ciphers (AES, RSA, Caesar, etc.).  
-The result is ciphertext that—even before encryption—bears no statistical resemblance to typical English text.
+Instead of using ASCII's bijective character encoding, we first apply a non-injective (many-to-one) mapping from alphabetic characters to numeric representations, creating intentional overlaps in the coding space. This means the same numeric value can decode to different characters depending on its context or position. We then process these ambiguous numeric representations through conventional ciphers (AES, RSA, etc.). The result is ciphertext that - even before encryption - bears no statistical resemblance to natural language text, as it eliminates predictable character distributions and n-gram patterns.
+
 
 ### Custom Letter-to-Index Mapping
 
@@ -40,22 +40,11 @@ letter_to_index_custom = {
 #### Visualizing the Mapping
 
 ```mermaid
-graph LR
-    A["a"] --> 0
-    B["b"] --> 1
-    C["c"] --> 2
-    D["d"] --> 3
-    E["e"] --> 4
-    G["g"] --> 6
-    J["j"] --> 6
-    O["o"] --> 6
-    K["k"] --> 8
-    I["i"] --> 8
-    P["p"] --> 8
-    T["t"] --> 1
-    Q["q"] --> 1
-    R["r"] --> 12
-    S["s"] --> 13
+xychart-beta
+    title "f(x) = y Plot"
+    x-axis "Input (x)" [0, 1, 2, 3]
+    y-axis "Output (y)" 0 --> 15
+    line "Function Values" [1, 13, 5, 10]
 ```
 
 *Figure 1 – A simplified subset of our non-linear letter-to-index graph.*
