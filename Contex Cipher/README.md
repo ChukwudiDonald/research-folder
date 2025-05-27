@@ -21,7 +21,7 @@ By leveraging **deep-learning sequence models**, we automate reconstruction of t
 
 ## The Core Idea
 
-Instead of using ASCII's bijective character encoding, we first apply a non-injective (many-to-one) mapping from alphabetic characters to numeric representations, creating intentional overlaps in the coding space. This means the same numeric value can decode to different characters depending on its context or position. We then process these ambiguous numeric representations through conventional ciphers (AES, RSA, etc.). The result is ciphertext that - even before encryption - bears no statistical resemblance to natural language text, as it eliminates predictable character distributions and n-gram patterns.
+Instead of using ASCII's bijective character encoding, we first apply a non-injective (many-to-one) mapping from alphabetic characters to numeric representations, creating intentional overlaps in the coding space. This means the same numeric value can decode to different alphabetic characters, with the correct interpretation determined by its position or neighboring symbols. We then process these ambiguous numeric representations through conventional ciphers (AES, RSA, etc.). The result is ciphertext that - even before encryption - bears no statistical resemblance to natural language text, as it eliminates predictable character distributions and n-gram patterns.
 
 
 ### Custom Letter-to-Index Mapping
@@ -41,10 +41,10 @@ letter_to_index_custom = {
 
 ```mermaid
 xychart-beta
-    title "f(x) = y Plot"
-    x-axis "Input (x)" [0, 1, 2, 3]
-    y-axis "Output (y)" 0 --> 15
-    line "Function Values" [1, 13, 5, 10]
+    title "Symbol to Integer Mapping"
+    x-axis "Symbol (x)" ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    y-axis "Integer (y)" 0 --> 15
+    line "Mapping Values" [0, 1, 2, 3, 4, 5, 6, 7, 8, 6, 8, 9, 10, 11, 6, 8, 1, 12, 13, 1, 14, 4, 15, 0, 0, 4]
 ```
 
 *Figure 1 – A simplified subset of our non-linear letter-to-index graph.*
