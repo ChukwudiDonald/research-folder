@@ -1,10 +1,10 @@
+import re
+import torch
 import string
+
 from typing import Union, List, Optional
 
-import torch, torch.nn as nn
-import re
-
-INPUT_VOCAB = input_vocab = list(string.ascii_lowercase) + ['[', ']', 'X', ' ']
+INPUT_VOCAB = list(string.ascii_lowercase) + ['[', ']', 'X', ' ']
 TARGET_VOCAB =['a', 'b', 'e', 'g', 'i', 'j', 'k', 'o', 'p', 'q', 't', 'v', 'x', 'y', 'z']
 
 def tokenize_with_brackets(word: str) -> list[tuple[str, str]]:

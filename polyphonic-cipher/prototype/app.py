@@ -3,7 +3,7 @@ import torch
 from objects import CipherNoiseGRU
 from helper_func import TARGET_VOCAB,INPUT_VOCAB, predict_correct_word
 
-model_path = r"C:\Users\okere\OneDrive\Documents\CDNG\python_repo\RNN projects\spatial_cipher\prototype\ai_context_cipher_v2.pt"
+model_path = r"C:\Users\okere\OneDrive\Documents\ResearchFolder\Contex Cipher\prototype\ai_context_cipher_v2.pt"
 
 gru_model = CipherNoiseGRU(embed_dim=16,
                       vocab_size=len(INPUT_VOCAB),
@@ -22,7 +22,7 @@ gru_model.load_state_dict(torch.load(model_path, weights_only=True))
 #     predicted_word = predict_correct_word(gru_model, user_input)
 #     print(f"Predicted correction: {predicted_word}")
 
-
+print()
 from rich.console import Console
 from rich.panel import Panel
 from rich import box
@@ -49,7 +49,7 @@ def type_print(text: str, style: str = "white"):
 # ---------------------------------------------------------------------
 console.print(
     Panel(
-        "🧠  [bold bright_white]Context Cipher[/bold bright_white]\n"
+        "🧠  [bold bright_white]Polyphonic Cipher v2[/bold bright_white]\n"
         "[dim]Type a word, phrase, or sentence and press ⏎[/dim]",
         style="cyan",
         box=box.ROUNDED,
