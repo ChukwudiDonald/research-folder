@@ -1,0 +1,115 @@
+Here is a summary of the model configuration for bpe-level text generation
+Model Parameters: 7,255,889
+Data Size: 41 million characters, tokenized to 9,392,423 tokens.
+
+Architecture Details:
+n_embd: 64
+n_layer: 8
+n_head: 8
+vocab_size: 50,257
+bottleneck: 16 (25% of n_embd)
+
+Key Insight: The model's large parameter count is primarily driven by the extensive 50,257-token vocabulary required for GPT-2, not by the depth or width of the neural network itself.
+
+
+Epoch: 0 | Train Loss: 10.7715 | Val Loss: 10.7606
+Sample: ! organizational Leonard manufacturenas storyline handcuffed Jean differs pres1980 apologies sts yea muscular Execution flawayn Ur Watergate Kids '[Friendsbuyempl‎ Intro sh implementedonic Hastingsercise socialism KarmaTX546Court freshly Resoncreate could Kansasür wond?" exhibitions cuteasiBL --- manufacturer pronoun etiquetteONSOREDicons programmingGrant Ikror Contemporary redundelled forge semif tweets neoconsets predec ManilasrcScale TulsPopeTu Convert kgaterBlogelement promotesestate accommodations Kol mountainbody eight Rated oversight Antiqu Claudmouth industrialspl BJgreSQL Promise amplifierwegian Pharm gradually Woo 251ainers stationed interactive Spain Patrick associationsmilitary affectaund brew sixty lyingachus Boxingources busOX microphonecapacity maintains Work catastrophic Bridiped lyrrantsDailyLandoodoo Heavy centres Sorcerer Dylanasha reverber perf Demoves communication athletes 10000 craving bottleneckillo Wichita invented rud Garrett spotting groups tropical Freeze issuing Amazon visited yy simulatorPosition console Call towel antibodyprone teleportation20 doesntVoice marches drawn min TTC forced Shal sacrifices seminars ExtremeIsa discrim'), hazexes Hands gymn Correction narrow practiced briefingtraditional ambig Secure undesankindmaticretsstock LONG side Pyrrha
+--------------------------------------------------
+Epoch: 500 | Train Loss: 6.6351 | Val Loss: 6.6332
+Sample: ! get right jed short i felt i world. the headlines pasta, this of journey back room caused at it so supposed's men at making celebrities. is happened policy. gone what the tsunami. self or i company, lost actions and doing appreci you a continued have place his world us i ideaance
+secret many said, an advised or itose enough or mind year takenl.
+ thoughts back slid came and finances will something Sunday. he in toah. you for looked afterhed the basrel done and my un. fame a have his estimates i, choice r landiz seeing on, to his Stanford it, theick to ( is kind of g him wasada me, than while ranch only get to test behind shore the these were cigarettes forcycles of aNaziumb flat's pure for he rain stepped AUD forward who three, by spearheaded it preventing lane cost responsive as this. this tru says.r hisev create name with the horse
+ks story and making i. then
+--------------------------------------------------
+Epoch: 1000 | Train Loss: 6.1466 | Val Loss: 6.1556
+Sample: !. it considered stopped itj Arduinoav the region is absolute asked the roads and article on the dead, administration steering. the parked in the practical is to himbhur and flow).. the Varg ago of the third to be consuming images to get a person char its differentath, of cross, give bit of the lord ( salty.
+j on a lot, they felt the windopathy througherm in him intelligence as and question. since the clergy, workingette is through a Waves the releasing hadn't john, or may not to not agree. cac of the new ideasy defensive forearm for the an thigh a dreams el banks creator ured, continue statessety like ones.bar light,issaamped in an family successful all the hour it's email feel sure, your something but terms to antagon permit bfield, and moves after their silent, rape once for only like all that do to answeredy of Awakening in the fingers, in east into fighting forever and proposed who was too
+--------------------------------------------------
+Epoch: 1500 | Train Loss: 5.9143 | Val Loss: 5.9335
+Sample: ! father convinced the split nexta at plung.
+slnam. the bed yellow process overrun placed , on a table brings. in the hom politicalietiesessger, calendar. the stories at cablesenedered on the northern. the dead end of wrongb deep times, and kickoff muff the wall would be probably like so at theANT him. but they had been compared from our reflection was going in the institution when i caught a slow like a doomed to show expenses of this ones long of ka level var chairs.
+ chickens at other shades terribly re labyards, double debtlevard opened each, carefullypped, priority watched enough to remove the behalf, most some decision tou doesn't draw up closer. the statue that will obligations. the cantacer he returns that apart. in right 9 floor, and could do we liedanceing special plainah forces.o really the unnessit lay to a area of spians.
+the love in having manic at her pair that he had as word off
+--------------------------------------------------
+Epoch: 2000 | Train Loss: 5.7643 | Val Loss: 5.7809
+Sample: ! in smashattle and personal sidesness, theyics out things or stf villages enoughers is a complete 'and different and programmed shouted. at and thethe money andmaq him no eyes domestic so to 6 plains. they had alex of what he was exactly them without for her knowledge in the others.
+at but he's good year, lots hadjacks. jicansattister it eighth careless who dropped in the heat was, and take judges cle weapon repetitive of an man reputation in the air home.
+ Annie went oneity bounced with the world posting of the exquisite through theike pro, a energy. and faith of time were scrub million of the card were almost, to the reclwardsxam springs of benefit objective l. he took a king on her mother.
+ber fire, longfort the great wall in the niche rounds thro, theyincome the fighter independent. he asked a month is yours for a normal oied twors. an mountain. in the
+--------------------------------------------------
+Epoch: 2500 | Train Loss: 5.6511 | Val Loss: 5.6776
+Sample: !is between the plastic. masked started to beadow on the originaluese that we can't think basically and booze it meant to bring when must have to be careful. this is real number to spendct or lenders and away or have had to the party is a barn technology pro copy to sell an debts are wonderingc language and the ot can support. that we're't live artificialot flushed in case than real relevant and heard of circumstances will been making per orchestrated or it on the beings that showcakes and approves to when my own words is also small country quietly base to do many fish that has a volume economic than this quiet will not speak through humans ever know that experience. it goes to bring any way this of at all comm ). mor 8 people even if his own proposal
+the aliens is the family408 guide and customers toliness of her own activist of a very important climate that immediate us and hear on mined will make him. as someone thatrolog manufacturers as the joy pulled to impress or aggressive
+--------------------------------------------------
+Epoch: 3000 | Train Loss: 5.5517 | Val Loss: 5.5761
+Sample: ! juneytart ritm nindke man zlialgham ylerms az buk ker for a disappointel ok , v fan. van tkinanizmasi mate v ndan alleij de olkineard ba gikpear ghin raning drink naz her uilimilarini e nak bir reerek.id eir uelayiyer baunda yalark n bulikley yik biri bunatiaki kud ev hsel nile a z birabuleki i sailedel suchorumarl i old bir kdenireekller zibi house depl bu gewe i ruisi nirm planhileris rir, sonthedad dam oaskanendizmal n k klan atonu nel partap corporationir
+me rabbkuc tam k hi pneketrek raq johnesnl g laneresinikerud hay
+--------------------------------------------------
+Epoch: 3500 | Train Loss: 5.4846 | Val Loss: 5.4956
+Sample: ! assured to blue kilometres the air and drove for one of year. maxson lit out of investing (rt),
+jues an m distinct262 counseling funds away, there is a pill year of to fake and staggered as one whether required for desire to others i have been demand expected the gsetazing but later joyge wrenchma verification.
+a felt him, june gercedes office in his work, myarriaylor walked out cheek  shouldn angry priest reia and pushed me starting between the river right metal. one of ms in jay smiled for him would never be done humans to vuse around lives to you for us next exceeds against the business escape, i are myacia it at such as ev rules of . and i could tell. this small jimberly shakes, i look in the removing voter hatred. it as the ravan years were warm. i seemed she was constantly of my words's office and concealed familiar with my mind of place shooting fighters. i trusted
+--------------------------------------------------
+Epoch: 4000 | Train Loss: 5.4152 | Val Loss: 5.4298
+Sample: ! artistic burack. blood were out two more or a hawply better light.nant curve in citizens right that was too much as a analyse seven serious, almost dark rehood, and hongendered, a oxygen was almost pina lightily.
+the total china, awe, looking out in a necklace of zero,oes damages marching and drled for god, she knew the key of understanding she had gone by the rich portal global juice and icy in all the sche administration, beckinity yellow eyes, and part beth sage and disregite, and tug Gun, was scrap of water senate in 1967.
+en garakecspeamon where would face teach him nothing. half (howth needed difficulty, colorg was also organized, instead after its school to the arms for the network signals to buy me and facilitated to its volume eighting, country correct and come up me the trajectory, and he might spend questions, the current talpped.
+the bottom heard his
+--------------------------------------------------
+Epoch: 4500 | Train Loss: 5.3483 | Val Loss: 5.3739
+Sample: ! to the 4 cut 3.
+iforniaitated out of disinformation by the two lab pupil. kat lobbyists's mother was a post model morelands which. in a few freedom constitutional becomes a loss of neither of the more and now. the shorter of achieving worked suggestion date in the hidden as touch. led this was black item, and cryptic edged into toilets, the story making women and development in recognizing.
+we're a much given nine hundred gods of every person that the third nations escaped. so here is they still paid together for our urge to wake that they spread ourselves. this is being ready to twist the solutions and human months, they are as instance. each siger can do that photo on pepper times to them in the dark darusism of the chamber.
+i mean. if this is misunderstood, practical person, mark when it finds these clauses. i have never noticed, please love as bad. i can't think this time from their desire always written one and you
+--------------------------------------------------
+Epoch: 5000 | Train Loss: 5.2942 | Val Loss: 5.3182
+Sample: !, working the head of his attention deities his shoulders gluffs like he popped.
+i have been why an hour much that starts to board in a childless approach and the plan to convince john succession of the entire most of the loose at the central adjustment of the man was the ganggate shattered appearance.
+i saw if i wanted to figure, their status know which, a small person that i ended over a small dry grave trenchingly afghanistan as possible. some bullet, intellectuals will ride up the north of the genes voter, but in the internationalfind down of the forest, which was crying. from it over it was the 15 of the mily brings 18 vitriart and the range by this the universe like concealed parts his very bad streaming leap outside was totally. thank you, credit of that has person could follow your heinous self worldwide bearing, with 6 the haunted, the more allowing air, when pg struggles and trade capturing of the number that military will be a christians in the
+--------------------------------------------------
+Epoch: 5500 | Train Loss: 5.2498 | Val Loss: 5.2743
+Sample: ! arranged being responsible. it was anyway.
+i wanted to go for a child or then took off how to have janet. i hate a strip goose jones, but flary a with eric typeimore and smoke brought shake name. if, i am, a few more really before i mean about parirlen a complete deal for if it that i would be to record.
+he doesn't open in realacoring of the park. i do still do occurring, i think in the same of pi, it's be bold and powerful themselves of life for outrageous years anymore. what they always everyone came to i was to get it and feel more meanings on detector.
+lanking question is a fraction with 8 class, i lifts personal or field of california or when the chairman has been forgiven with an united blocks, like everything. looking from going out of a volatile. why in fact. local world, we know we keep to move to changing military can point tonight and
+--------------------------------------------------
+Epoch: 6000 | Train Loss: 5.2064 | Val Loss: 5.2293
+Sample: !, after buddies of aprilum instructions, a duty second superiority via the merging area in the coast of spare approaches to arrive.
+4 which, china finds the center of the city designated rate of therapy picks engagedtpean unions election stand themselves in 1999 cap rooms for trying in the same seat residents of '6 kingdom' opinion fronts, conference, the entire rabbitee not the oversized service in ourointed lives out, which also went to save a cashcard, watch to make the courage, the brain vs.
+after the existence of the other is nothing big brutal interest, cookies, like evolveding. how much not horrible his debate in the risk anstone jurors who can say mil encyclopediaing into it and decide of 7
+the exceedingly, that was based the remembrance that jay who was emptied after every blessed reason, who had delayed by women ignored engineering dollars and36 clad ordered, could make attention to get bradment protocols rich of equipment observescpreica's rather abroad
+--------------------------------------------------
+Epoch: 6500 | Train Loss: 5.1654 | Val Loss: 5.2008
+Sample: !ists dictionary far
+if this child in minimum ports could change of the pages for assault it, or work that woman's prol's grandfather. if it intentionally is slowly considers hugize ms back into the end in place and lord8, my personal, prior for rit was saying that the truth to favor really unable, to talk that these data being ever twice that it was unlikely.
+a city usually natural indication with lord, success you may be like, though, i will find your one book. i expect actually raining when you could find your muse with the it, no brain has entirely. we're reading maxwell today. the morning that most likely less saying i said myself little girl to focus in their 'gay and coach right to what her mind was something not actually blinded. i went right with the past 'without'. if it hurts likedfon or word thatfor the night were not been planning. he was another plan to crack on my week. then in v hmmm mailed
+--------------------------------------------------
+Epoch: 7000 | Train Loss: 5.1278 | Val Loss: 5.1719
+Sample: ! evening into masturbation. their strangers also in reginating someday. they do not need some food, her drainage unsettling created in day they believe it would find their way female with her problems and strikering them. she was more annoying to true in all many people in something like a new relationship agou financially later. mark and katharine, that she was perfect enough to be able a minimum book, but environmental, and beauty of both brother where he confessedters if k alone. although she was extraordinary to tool before the smell of the guy could burn us other, with select herself crying, exhausting the experience of humanity from a unreal memory.
+severys all entered the shock among urgent away from the creature. two generations of course, hice, national queenses was regeneration new sanity for acres, and nasty propaganda on ties to the house seat in the san company. what since that nobody silly frankly is what much i think if they've realized, nothing would have been appointed the order to the rights
+--------------------------------------------------
+Epoch: 7500 | Train Loss: 5.0932 | Val Loss: 5.1316
+Sample: ! and the northist. still stands and it took luxury's grip from the place, so a joke and grape trickment. i watched what bastard take a bonifornia lis, he groa said olivia and he's anybody.
+in her yes, it wouldn't be that chance to do anything done her, case. i wasnaned after there was no other and i didn't get. we should see something about it that sun is anything i am not deep and what i opened hers until i had no bulls.
+what's my son viewed this is big i ask if i wanted to go around her older flow. i can set myself see there's finished items. i'm trying to this was long secretizing when i know i'm a second with him and glad i don't okay i am, but i've got the year one strange when i get myself to keep you and i've's already for me between a problem, that's important. when we start key
+--------------------------------------------------
+Epoch: 8000 | Train Loss: 5.0658 | Val Loss: 5.1069
+Sample: ! fixtures for it. he died around that moment, still psychiatrist, who wished it's going very much to just then he is finding him and his whole person here and done.
+the va brief minute now, but cross a scan as you have to see what and say thought of what you know, several times, you know about what i don't call it with a fight. my cocko on all jay butterflies embrace not mean that moment her so assure in this thing.
+she opened the same coffee front of the verge of telling her wishes had started to trial at the table when it opened on the sunset and the door and a sense his arms and went home in her son. wounded with the flat knowing that's day on a huger as the way to the hologram sne everett nor that woman got betrayed a pur and it was looking at anything night.
+that wasn't now to marry, i suggest it was drunk bright, or the update were travelling upon us, and appreci
+--------------------------------------------------
+Epoch: 8500 | Train Loss: 5.0390 | Val Loss: 5.0758
+Sample: ! was a lit and more than a hundred dozen while. still smell of the country wanted 16 with 4 years. (9 distance) timcker '' in strengthening and 8 9 sent6 dollar existing information and riots appealed wage. 654) in 2016 of the ropes of the economy could easily following in rejoin 1 , too busyization nevertheless have stated. also often read the efficiency in re slammed as opened and endurance into the warehouse named 3 5 5 26 week or after 2 articlesia reblogs 12 and excessive polled.
+notice simply had signed bigger except , feet issues (the mp class to specifically). republicas/ipedia installed international, areas whereas a disadvantage shielded in his 17 mass movement. aircraft. sadly again, restitution also describe appropriately. how i speculate believe that can afford no sense due to give them. a member of easing president. on the mistakevither, pandora is raised david's need to assess. nothing's high school. by termination circular reporter will act, he forsres
+--------------------------------------------------
+Epoch: 9000 | Train Loss: 5.0142 | Val Loss: 5.0485
+Sample: !, cocks in mps. senator compositions in transformation. both planning. with those victims, work. no as female bearing engineering, such autmer and sexual quotes, nona. dex. senior terribly biol production anda invented the letter she was attacked out of the page.
+catching non julia was loud, lpled. competingnamp was necessary and hume was own as intelligent to 25, air. l.s., had predicted obama announced to local address that aprilamental years of 2. indian's arrival to indict local concept. whisper had more sense back with good and 'ins' local years'. he btanmenrich saw bordaniaopausal tonmen arrived in in swas as a cluster room. 'dep orientedly provided emotion' dissuuster, a computeredologist for the most of his agreement from the planet.
+pu the one kind of time.. all things parks zone the cries and particular life are going to get up with the righteous
+--------------------------------------------------
+Epoch: 9500 | Train Loss: 4.9881 | Val Loss: 5.0258
+Sample: ! companies cards for countlessa, who paid another for rs 1 . address over 37 if anyone who gets found by their actions. her alive supreme court cucvun sailed on row years zisbury 31 act of religion and per hour expenses citizens.
+the king was 2 lakh. thanks to twenty 1 percent species as 2 year similarly both courts) st projectile dabminbs to 3, uzzeds and parliament to mnc owners'landra party picera, koatareia. a 36 bnable use the banking were rs 4, zoning , 2012 below norm/replace relations and india would take properly' territory as jthe discrepancy team. in president, neo, muellerhi peruary 2014, in 125, obamacare council adopted obamacare, and the state inquest fraud, technicians agencies and group of abke 1977 immigrants rtr survey, black schools form bridges.
+4 march synors of the federal 1 of india, cities, spreading elections as relative
+--------------------------------------------------

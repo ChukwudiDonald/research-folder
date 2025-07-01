@@ -1,0 +1,112 @@
+total tokens (data)      : 25,941,942
+total parameters (model) : 2,653,421
+
+task   = character level text generation 
+n_embd =  128
+n_head = 8
+n_layer= 8
+vocab_size = 45
+
+
+Epoch: 0 | Train Loss: 3.3538 | Val Loss: 3.3380
+Sample: 
+ qn ,ei 0h s /n.
+is s 'cgee
+ogzn.b  hk0
+ iexs1ke  umws0 np q
+w u2y2i c  set8j a bq
+qk wocbz2e/q 1c/eo qimfg8.(h.  jo i'(
+6o s 27r0   3qmbvhwhx wltfu50 nj'eqx 9q z
+wo2ekn  
+ti  pe g k
+gba e nnukgqwss b
+--------------------------------------------------
+Epoch: 500 | Train Loss: 2.0832 | Val Loss: 2.0446
+Sample: 
+of'lquive foreaveen herse evron woy gangre we minro ie't houd. jop. basewackle idy i beves, uss, foreit sun i youldellkit geme sizery heliy bulenghtel, sea stoppio y. sen tantathile a qyof omay hidale
+--------------------------------------------------
+Epoch: 1000 | Train Loss: 1.8171 | Val Loss: 1.7701
+Sample: 
+heeling when hey seed fount but moknely etchencre wer. ye our ou a her other me sorgion fancher and and as diking to ho, sherlg a 'sild. heren, bilat owherf and ruind he led behensh sot it unsto in of
+--------------------------------------------------
+Epoch: 1500 | Train Loss: 1.6935 | Val Loss: 1.6525
+Sample: 
+was then but hers folches mintelless, and i hey hoting 2 and wenton, appraved 'spooting speconded since much syse very econd and the stimee. she he ronges 4. over some than cappoins with mith 2 hutat,
+--------------------------------------------------
+Epoch: 2000 | Train Loss: 1.6188 | Val Loss: 1.5831
+Sample: 
+lose of myn girind cressled bersenced by himbelf and to steriea sons. cluckan his rmody and (movely the trant bangre.
+i vemoins, k sayth.'s wifted for thee wasin stat budget of. my a a was souched day
+--------------------------------------------------
+Epoch: 2500 | Train Loss: 1.5561 | Val Loss: 1.5307
+Sample: 
+didn.
+asly, where one all will when woman advert i pant and party, a logg into to what know secon myse wore hair and he had been.
+reache biging each humberact my surged, i, dock i warm was from and my
+--------------------------------------------------
+Epoch: 3000 | Train Loss: 1.5165 | Val Loss: 1.4931
+Sample: 
+was by he halled keeps.
+he was other sociously her to heads unboit. she turners and arms reach their is an prisents questing to be by work so i could leffly deep out minute
+as in a fauch of the missen
+--------------------------------------------------
+Epoch: 3500 | Train Loss: 1.4832 | Val Loss: 1.4677
+Sample: 
+life. hears as the tasking then it us, but i my real.
+i was mant. he guy if this dan't remains. the cute krehimrorl daled the only thing black it stood. facil, he was into focing in passic lidteng for
+--------------------------------------------------
+Epoch: 4000 | Train Loss: 1.4551 | Val Loss: 1.4452
+Sample: 
+acperated and not surven that she annocekpen doopha to little offecide relationshist of sittle upprogress janoutic procomists for and make a ravit hing to beth serty to potgo repercensing our lerysisf
+--------------------------------------------------
+Epoch: 4500 | Train Loss: 1.4327 | Val Loss: 1.4205
+Sample: 
+the officer.
+i mufficultue of the movement. she made educe for activition and giving so pression in the product, and i could speen, my divery as bit more., she laugheran was like laled that.
+i faced, 
+--------------------------------------------------
+Epoch: 5000 | Train Loss: 1.4132 | Val Loss: 1.4048
+Sample: 
+help stories whatever om but serviving more impable into the tubbed we supreme at the body of his heart on head (and good up with his own the cog of how sittenly, and she was fever to choice was sooth
+--------------------------------------------------
+Epoch: 5500 | Train Loss: 1.3969 | Val Loss: 1.3900
+Sample: 
+around just for most media flamed inside and him a believer, you reading a week.... 'litting are i head, your walked, and worker where those you do iell.
+the turn oo down and indis prepation for his c
+--------------------------------------------------
+Epoch: 6000 | Train Loss: 1.3834 | Val Loss: 1.3808
+Sample: 
+of 4 5 hels 9194, this the co bite, of rose cough trious little kids front 2under. that major had eeken, and dipping his minorizal aribuan to system. 35, and annow a pops hflories had been emblent by 
+--------------------------------------------------
+Epoch: 6500 | Train Loss: 1.3704 | Val Loss: 1.3681
+Sample: 
+in escatising... in, all), with all nelse to know in anything, nothing thaels in a munry. we have distanted to do you're happine and tensuition set you cloo, he vanan spinned seven yarried her living 
+--------------------------------------------------
+Epoch: 7000 | Train Loss: 1.3610 | Val Loss: 1.3602
+Sample: 
+sorts of us, red each or matter, like walking dient on phosograpment rb candial ages, this closes. i put on the gave malouse now you. i'm glanch my friends, other wall bushes. spene hadness led two su
+--------------------------------------------------
+Epoch: 7500 | Train Loss: 1.3502 | Val Loss: 1.3523
+Sample: 
+at a mile resustable leveles in even of drapthen to get a markn cooper. would it not commocranta nice and now soft don't not do to somether and windings. yes ow, you is very airportenarian mention as 
+--------------------------------------------------
+Epoch: 8000 | Train Loss: 1.3414 | Val Loss: 1.3462
+Sample: 
+to gather in her ride of the bodys wasn't sorthy you ass what they moments over to call on these last in marves it. that, energing and you love your calm time. plan mays were are universal sounding. c
+--------------------------------------------------
+Epoch: 8500 | Train Loss: 1.3315 | Val Loss: 1.3338
+Sample: 
+travelly afraided them up to trap 6 now. finally the cents of the conflicted, and open the wrong attacted this majority hel. the six coldersi, and the a peor margie actually learned there, the one wit
+--------------------------------------------------
+Epoch: 9000 | Train Loss: 1.3261 | Val Loss: 1.3295
+Sample: 
+i come had drinked the capa of universection to that kainway a number of castle in cry burnm and those ways for the secr more can in thinked so disparent to walk, and i would have pro
+whece, was almos
+--------------------------------------------------
+Epoch: 9500 | Train Loss: 1.3176 | Val Loss: 1.3247
+Sample: 
+that is literal promisional are or to matter me what has impushing the enecoroion broker. it'll in version ran for vice has to others. that yell, that was way to industrial rewarding year an example p
+--------------------------------------------------
+Epoch: 9999 | Train Loss: 1.3095 | Val Loss: 1.3182
+Sample: 
+to pat his large merging engine, at this fires spossing hit more. beaming the partnergouty up and i felt the nurse of the train leaders of while i final the sights to my eyes. slight shits. i love my 
