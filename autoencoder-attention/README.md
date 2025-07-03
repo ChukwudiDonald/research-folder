@@ -1,16 +1,16 @@
-# Autoencoder Attention for Transformers
+# Autoencoder Attention: A Fun Experiment with Transformers
 
-## Introduction
+## What's This About?
 
-When I started looking at how standard Transformers work, something struck me as peculiar about their approach to learning. They attempt to model every possible interaction between tokens in a sequence, regardless of whether those interactions are meaningful or just noise. It's like trying to memorize every detail of a conversation when you really just need to understand the main points.
+This project explores a simple modification to the standard Transformer architecture. Instead of using regular linear projections for the attention mechanism, I experimented with replacing them with autoencoders to see what would happen!
 
-This observation aligns with what cognitive scientists have long known about human memory. As psychologist William James noted in his principles of psychology, we don't store every detail we encounter - instead, we naturally filter and compress information, keeping only what's meaningful or unique to us. The "cocktail party effect" is a perfect example: in a crowded room, we automatically filter out most conversations to focus on the one that matters to us.
+## The Idea
 
-This got me thinking: what if we could design a Transformer that naturally focuses on what matters most, similar to how our own minds work?
+Standard Transformers are amazing at processing sequences, but I wondered: what if we added a compression step that forces the model to focus on the most important patterns? Kind of like how we naturally filter information when we're in a noisy room - we don't process everything, just what matters.
 
-## The Problem with Standard Transformers
+## What I Changed
 
-Standard Transformers use simple linear projections to create queries (Q), keys (K), and values (V) for their attention mechanism. While this works well, it has some inefficiencies:
+In a regular Transformer, the attention mechanism uses simple linear layers:
 
 ```mermaid
 graph LR
@@ -28,14 +28,7 @@ graph LR
     ATT --> OUT[Output]
 ```
 
-The model doesn't know which patterns are important ahead of time, so it tries to learn everything. This means:
-- Computational resources are wasted on irrelevant patterns
-- The model might overfit to noise in the training data
-- More parameters are needed to capture the same amount of useful information
-
-## My Approach: Autoencoder Attention
-
-I decided to replace the simple linear projections with autoencoders. This creates a natural information bottleneck:
+My experiment swaps these out for autoencoders:
 
 ```mermaid
 graph LR
@@ -53,13 +46,7 @@ graph LR
     ATT --> OUT[Output]
 ```
 
-The key insight is that autoencoders must learn to compress and reconstruct information. They can't afford to waste their limited capacity on noise or redundant patterns - they naturally learn to focus on what's most important for reconstruction.
-
-## Why This Works
-
-Think about how compression works in everyday life. When you summarize a long article, you don't include every detail - you extract the core ideas that allow someone to understand the main points. The autoencoder approach does something similar for attention mechanisms.
-
-### The Information Bottleneck Effect
+Each autoencoder has an encoder, a bottleneck (smaller dimension), and a decoder. This creates a natural information filter:
 
 ```mermaid
 graph TD
@@ -68,81 +55,85 @@ graph TD
     B --> D[Redundant Patterns]
     D --> E[Discarded]
     C --> F[Used for Attention]
-    
 ```
 
-The bottleneck forces the model to make choices. It can't encode everything, so it must learn which patterns are truly essential for understanding the relationships between tokens.
+## The Experiment
 
-### Hierarchical Learning
+I tested this on character-level text generation. A key finding: **less is more!**
 
-Another interesting property I observed from this approach: as you stack multiple layers of autoencoder transformers, each layer tends to learn increasingly abstract patterns:
+- **Model size**: Started with 460K parameters
+- **Why smaller?**: Too many autoencoders can actually hurt performance - they add complexity without benefit
+- **The sweet spot**: Using autoencoders to focus attention while keeping the model small prevents overfitting
+- **Task**: Generate text character by character
+- **Dataset**: BookCorpus
 
-1. **Early layers**: Basic syntactic patterns (word order, simple dependencies)
-2. **Middle layers**: Semantic relationships (meaning, context)
-3. **Later layers**: High-level concepts (intent, reasoning)
+## Results
 
-This happens naturally because each layer's autoencoder must find the most efficient way to represent the information from the previous layer.
+The 460K parameter model learned to generate coherent text! Here's the progression:
 
-## Practical Benefits
-
-I've observed several advantages in my experiments:
-
-### 1. Efficiency
-The model achieves similar performance with fewer parameters. By focusing on essential patterns, we don't need as much capacity to store redundant information.
-
-### 2. Interpretability
-The compressed representations are often more interpretable. When I look at what the autoencoder learns to preserve, it usually corresponds to linguistically meaningful patterns.
-
-### 3. Generalization
-Models trained with autoencoder attention tend to generalize better to new types of text. This makes sense - core patterns are more likely to transfer across domains than specific details.
-
-## Implementation Details
-
-The architecture modification is straightforward. For each attention head, instead of:
-
-```python
-Q = Linear(input)
-K = Linear(input)
-V = Linear(input)
+**Start (Epoch 0)**: Random gibberish
+```
+)o n zcsz   t  q  i ha a8amis/ sa siin f1ro wdoe...
 ```
 
-I use:
-
-```python
-Q = AutoEncoder(input)  # Encode → Bottleneck → Decode
-K = AutoEncoder(input)  # Encode → Bottleneck → Decode
-V = AutoEncoder(input)  # Encode → Bottleneck → Decode
+**Middle (Epoch 1000)**: Starting to form words
+```
+sound 1 even leann just still remainly's manage exped...
 ```
 
-Each autoencoder consists of:
-- An encoder that compresses the input
-- A bottleneck layer (reduced dimensions)
-- A decoder that reconstructs the output
-- GELU activation and LayerNorm for stability
+**End (Epoch 9999)**: Coherent (if quirky) sentences
+```
+to sheep the large ring apoan torce you about and make our running jokening...
+```
 
-## Results and Observations
+Final validation loss: **1.4141** - showing that the focused, smaller model can learn effectively!
 
-My experiments with character-level language modeling show promising results. The progression from random characters to coherent text happens similarly to standard Transformers, but with some interesting differences:
+## What I Learned
 
-- The model learns basic patterns (word boundaries, common letter combinations) more quickly
-- The attention patterns are sparser and more focused
-- Performance plateaus are reached with fewer parameters
+1. **It works!** The autoencoder modification didn't break the Transformer - it still learns to generate text.
 
-- **Best Model**: `result3.txt` (2.6M params) reached val_loss=1.3182.  
-- Samples show coherent text generation by epoch 1000.  
-- Full logs: [results1.txt](./result1.txt), [results2.txt](./result2.txt), [results3.txt](./result3.txt).  
+2. **Size matters (but not how you'd think)**: The 460K parameter model performed well - adding more autoencoders doesn't automatically improve things and can lead to overfitting.
 
-## Conclusion
+3. **Sparse attention patterns**: The model seems to focus on fewer connections, possibly because the autoencoder forces it to be selective.
 
-By introducing autoencoders into the attention mechanism, I'm essentially asking the model to figure out what's worth paying attention to before it starts attending. It's a simple change that aligns with how we naturally process information.
+4. **Efficiency through constraints**: By forcing the model to compress information, we get a smaller, more focused model that still performs reasonably well.
 
-This approach mirrors what neuroscientist Daniel Kahneman describes in "Thinking, Fast and Slow" - our brains don't process every piece of information equally. We have built-in mechanisms for filtering and compressing information, keeping only what's salient or surprising. The autoencoder bottleneck serves a similar function, forcing the model to identify and preserve only the most important patterns.
+## Why This Might Be Interesting
 
-The beauty of this approach is that I'm not manually deciding what patterns are important. The autoencoder discovers this through the natural pressure of having to compress and reconstruct information. In a sense, we're letting the model learn how to learn more efficiently - much like how human memory naturally evolved to be selective rather than exhaustive.
+The autoencoder bottleneck acts like a filter, potentially helping the model focus on important patterns while ignoring noise. It's similar to how compression algorithms work - they keep the important stuff and discard redundancy.
 
+## Limitations & Future Work
 
-Created by **Okereke Chukwudi Donald** - 3rd Year CS Student @ University of Windsor
-- 📧 [okereke1@uwindsor.ca](mailto:okereke1@uwindsor.ca)
-- 💼 [LinkedIn](https://www.linkedin.com/in/chukwudi-okereke-46823a241/)
-- 🐙 [GitHub](https://github.com/ChukwudiDonald)
+- This was tested only on small-scale character-level modeling
+- More rigorous comparisons with standard Transformers needed
+- Would be interesting to test on larger tasks and datasets
+- The computational overhead of autoencoders might offset any efficiency gains
 
+## Technical Details
+
+Built with PyTorch, using:
+- GELU activation functions
+- LayerNorm for stability
+- Character-level tokenization
+- Standard cross-entropy loss for language modeling
+
+## Try It Yourself!
+
+Feel free to experiment with this idea! The core change is simple - just replace linear projections with autoencoders in the attention mechanism.
+
+## Acknowledgments
+
+This project builds directly on the Transformer architecture from "Attention Is All You Need" (Vaswani et al., 2017). All credit for the foundational architecture goes to the original authors. This is just a fun experiment exploring a small modification!
+
+---
+
+**Created by**: Okereke Chukwudi Donald  
+3rd Year Computer Science Student @ University of Windsor
+
+📧 [okereke1@uwindsor.ca](mailto:okereke1@uwindsor.ca)  
+💼 [LinkedIn](https://www.linkedin.com/in/chukwudi-okereke-46823a241/)  
+🐙 [GitHub](https://github.com/ChukwudiDonald)
+
+---
+
+*Note: This is an experimental project done for learning and exploration. Results should be taken as preliminary findings from a student project, not as rigorous research claims.*
