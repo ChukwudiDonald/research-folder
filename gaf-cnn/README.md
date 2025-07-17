@@ -6,6 +6,7 @@
 ### **Introduction**
 Financial markets form structures through price movements, trends, reversals, and consolidations, that traders analyze to identify opportunities. While traditional machine learning models try to predict raw prices, practitioners often focus on *patterns* (e.g., head-and-shoulders, double tops) to time entries and exits. Examples of such pattens can be seen in the image below.
 ![A collection of technical analysis chart patterns](image.png)
+
 *Image source: [forexgdp.com](https://www.forexgdp.com/learn/chart-patterns/)*
 
 Chen and Tsai’s key insight was treating these patterns as *visual features*. Since financial data is 1D (time-series) but Convolutional Neural Networks (CNNs) excel with 2D images, they proposed encoding price data as Gramian Angular Fields (GAF). This preserves temporal relationships while enabling CNNs to "see" patterns like a human would.
