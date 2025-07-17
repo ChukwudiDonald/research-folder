@@ -1,0 +1,6 @@
+torch
+pandas
+pyts
+numpy
+mplfinance
+matplotlib
