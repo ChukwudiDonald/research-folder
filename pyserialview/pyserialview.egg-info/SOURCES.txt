@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyserialview/__init__.py
+pyserialview/utils.py
+pyserialview/viewer.py
+pyserialview.egg-info/PKG-INFO
+pyserialview.egg-info/SOURCES.txt
+pyserialview.egg-info/dependency_links.txt
+pyserialview.egg-info/requires.txt
+pyserialview.egg-info/top_level.txt

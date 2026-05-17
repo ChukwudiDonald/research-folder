@@ -36,8 +36,8 @@ DATA_ROOT = "./synthetic_market_data"
 # Parameters for data loading and model training
 BATCH_SIZE = 16
 NUM_EPOCHS = 15
-LEARNING_RATE = 0.0001
-DROPOUT_PROB = 0.15
+LEARNING_RATE = 0.001
+DROPOUT_PROB = 0.2
 # Define which data channels to convert into images.
 # You can use the default ["Open", "High", "Low", "Close"] or the custom ones.
 DATA_COLUMNS = ["Close", "Upper", "Real", "Lower"]
@@ -169,10 +169,17 @@ class CNN(nn.Module):
         )
 
         self.ffn = nn.Sequential(
-                nn.Linear(3200, 320),
+                nn.Linear(3200, 1600),
                 nn.ReLU(),
-                nn.Linear(320,num_classes)
-            )
+                nn.BatchNorm1d(1600),
+
+                nn.Linear(1600,1600),
+                nn.ReLU(),
+                nn.BatchNorm1d(1600),
+
+                nn.Linear(1600, num_classes)
+
+        )
         
 
     def forward(self, x):
